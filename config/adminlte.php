@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'SIVIRENO',
+    'title' => 'SISACADEMICO | UNDC',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -63,8 +63,8 @@ return [
     |
     */
 
-    'logo' => '<b>SISTEMA ACADÉMICO </b>UNDC',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo' => '<b>SISACADEMICO</b> | UNDC',
+    'logo_img' => 'img/logo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -134,10 +134,10 @@ return [
     */
 
     'usermenu_enabled' => true,
-    'usermenu_header' => false,
+    'usermenu_header' => true,
     'usermenu_header_class' => 'bg-primary',
     'usermenu_image' => false,
-    'usermenu_desc' => false,
+    'usermenu_desc' => true,
     'usermenu_profile_url' => false,
 
     /*
@@ -154,7 +154,7 @@ return [
 
     'layout_topnav' => null,
     'layout_boxed' => null,
-    'layout_fixed_sidebar' => null,
+    'layout_fixed_sidebar' => true,
     'layout_fixed_navbar' => null,
     'layout_fixed_footer' => null,
     'layout_dark_mode' => null,
@@ -300,7 +300,14 @@ return [
 
     'menu' => [
         // Navbar items:
-        
+
+        [
+            'text' => 'Mi Perfil',
+            'url' => 'perfil',
+            'icon' => 'fas fa-fw fa-user',
+            'topnav_user' => true,
+        ],
+
         [
             'type' => 'fullscreen-widget',
             'topnav_right' => true,
@@ -308,36 +315,111 @@ return [
 
         // Sidebar items:
         [
-            'type' => 'sidebar-menu-search',
-            'text' => 'search',
+            'text' => 'Inicio',
+            'url' => 'home',
+            'icon' => 'fas fa-fw fa-home',
         ],
-        
-        [
-            'text' => 'pages',
-            'url' => 'admin/pages',
-            'icon' => 'far fa-fw fa-file',
-            'label' => 4,
-            'label_color' => 'success',
-        ],
-        ['header' => 'Data of systen'],
+
+        ['header' => 'ESTUDIANTE'],
 
         [
-            'text' => 'configuratión',
-            'url' => 'admin/configuraciones',
-            'icon' => 'fas fa-fw fa-cogs',
-            'classes' => 'bg-blue text-white',
+            'text' => 'Dashboard',
+            'url' => 'dashboard',
+            'icon' => 'fas fa-fw fa-tachometer-alt',
         ],
-        
+        [
+            'text' => 'Mi cuenta',
+            'url' => 'perfil',
+            'icon' => 'fas fa-fw fa-id-card',
+        ],
+        [
+            'text' => 'Carné U.',
+            'url' => 'carne-universitario',
+            'icon' => 'fas fa-fw fa-id-card',
+        ],
+        [
+            'text' => 'Ficha Socioeconómica',
+            'url' => 'ficha-socioeconomica',
+            'icon' => 'fas fa-fw fa-file-invoice-dollar',
+        ],
+        [
+            'text' => 'Pagos',
+            'url' => 'pagos',
+            'icon' => 'fas fa-fw fa-credit-card',
+        ],
+        [
+            'text' => 'Información académica',
+            'url' => 'informacion-academica',
+            'icon' => 'fas fa-fw fa-graduation-cap',
+        ],
+        [
+            'text' => 'Mis Trámites',
+            'url' => 'mis-tramites',
+            'icon' => 'fas fa-fw fa-folder-open',
+        ],
+        [
+            'text' => 'Calidad',
+            'url' => 'calidad',
+            'icon' => 'fas fa-fw fa-certificate',
+        ],
+
+        ['header' => 'PLATAFORMAS'],
 
         [
-            'text' => 'profile',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'text' => 'Centro de Idiomas',
+            'url' => 'centro-de-idiomas',
+            'icon' => 'fas fa-fw fa-language',
         ],
-        
-        ['header' => 'labels'],
-        
-        
+        [
+            'text' => 'Aula virtual',
+            'url' => 'aula-virtual',
+            'icon' => 'fas fa-fw fa-graduation-cap',
+        ],
+        [
+            'text' => 'Biblioteca virtual',
+            'url' => 'biblioteca-virtual',
+            'icon' => 'fas fa-fw fa-book',
+        ],
+        [
+            'text' => 'SISTECU',
+            'url' => 'sistecu',
+            'icon' => 'fas fa-fw fa-comments',
+        ],
+        [
+            'text' => 'GEDIPI',
+            'url' => 'gedipi',
+            'icon' => 'fas fa-fw fa-book-open',
+        ],
+
+        ['header' => 'OTROS'],
+
+        [
+            'text' => 'Calendario',
+            'url' => 'calendario',
+            'icon' => 'fas fa-fw fa-calendar-alt',
+            'label' => '2026',
+            'label_color' => 'primary',
+        ],
+        [
+            'text' => 'Bolsa de trabajo',
+            'url' => 'bolsa-trabajo',
+            'icon' => 'fas fa-fw fa-toolbox',
+        ],
+        [
+            'text' => 'Libro de Reclamaciones',
+            'url' => 'libro-reclamaciones',
+            'icon' => 'fas fa-fw fa-book',
+        ],
+        [
+            'text' => 'Convenios UNDC',
+            'url' => 'convenios-undc',
+            'icon' => 'fas fa-fw fa-handshake',
+        ],
+        [
+            'text' => 'Convocatoria de bienes y servicios',
+            'url' => 'convocatoria-bienes-servicios',
+            'icon' => 'fas fa-fw fa-store',
+        ],
     ],
 
     /*

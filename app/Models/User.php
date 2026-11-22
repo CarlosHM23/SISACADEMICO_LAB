@@ -33,6 +33,11 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+    public function adminlte_desc()
+    {
+        return 'Estudiante';
+    }
+
     /**
      * Get the attributes that should be cast.
      *
