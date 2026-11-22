@@ -349,8 +349,39 @@ return [
         ],
         [
             'text' => 'Información académica',
-            'url' => 'informacion-academica',
             'icon' => 'fas fa-fw fa-graduation-cap',
+            'submenu' => [
+                [
+                    'text' => 'Mis Asignaturas',
+                    'url' => 'mis-asignaturas',
+                    'icon' => 'fas fa-fw fa-book',
+                ],
+                [
+                    'text' => 'Silabus',
+                    'url' => 'silabus',
+                    'icon' => 'fas fa-fw fa-file-alt',
+                ],
+                [
+                    'text' => 'Horario',
+                    'url' => 'horario',
+                    'icon' => 'fas fa-fw fa-clock',
+                ],
+                [
+                    'text' => 'Notas',
+                    'url' => 'notas',
+                    'icon' => 'fas fa-fw fa-check-square',
+                ],
+                [
+                    'text' => 'Plan de estudios',
+                    'url' => 'plan-de-estudios',
+                    'icon' => 'fas fa-fw fa-map',
+                ],
+                [
+                    'text' => 'Mis Trámites',
+                    'url' => 'mis-tramites',
+                    'icon' => 'fas fa-fw fa-folder-open',
+                ],
+            ],
         ],
         [
             'text' => 'Mis Trámites',

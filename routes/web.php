@@ -18,6 +18,11 @@ Route::get('/carne-universitario', [App\Http\Controllers\HomeController::class, 
 Route::get('/ficha-socioeconomica', [App\Http\Controllers\HomeController::class, 'modulo'])->defaults('titulo', 'Ficha Socioeconómica')->name('ficha-socioeconomica')->middleware('auth');
 Route::get('/pagos', [App\Http\Controllers\HomeController::class, 'modulo'])->defaults('titulo', 'Pagos')->name('pagos')->middleware('auth');
 Route::get('/informacion-academica', [App\Http\Controllers\HomeController::class, 'modulo'])->defaults('titulo', 'Información académica')->name('informacion-academica')->middleware('auth');
+Route::get('/mis-asignaturas', [App\Http\Controllers\HomeController::class, 'modulo'])->defaults('titulo', 'Mis Asignaturas')->name('mis-asignaturas')->middleware('auth');
+Route::get('/silabus', [App\Http\Controllers\HomeController::class, 'modulo'])->defaults('titulo', 'Silabus')->name('silabus')->middleware('auth');
+Route::get('/horario', [App\Http\Controllers\HomeController::class, 'modulo'])->defaults('titulo', 'Horario')->name('horario')->middleware('auth');
+Route::get('/notas', [App\Http\Controllers\HomeController::class, 'modulo'])->defaults('titulo', 'Notas')->name('notas')->middleware('auth');
+Route::get('/plan-de-estudios', [App\Http\Controllers\HomeController::class, 'modulo'])->defaults('titulo', 'Plan de estudios')->name('plan-de-estudios')->middleware('auth');
 Route::get('/mis-tramites', [App\Http\Controllers\HomeController::class, 'modulo'])->defaults('titulo', 'Mis Trámites')->name('mis-tramites')->middleware('auth');
 Route::get('/calidad', [App\Http\Controllers\HomeController::class, 'modulo'])->defaults('titulo', 'Calidad')->name('calidad')->middleware('auth');
 Route::get('/centro-de-idiomas', [App\Http\Controllers\HomeController::class, 'modulo'])->defaults('titulo', 'Centro de Idiomas')->name('centro-idiomas')->middleware('auth');
